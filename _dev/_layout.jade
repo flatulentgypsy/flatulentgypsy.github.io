@@ -1,0 +1,12 @@
+doctype
+html
+  head
+    title= title
+    meta(name='description' content=description)
+    link(rel='stylesheet' href='/css/style.css')
+  body
+      header
+        h1: a(href='/') JohnLovesKittens
+        p John's personal blog. Mostly about kittens.
+      main
+        != yield

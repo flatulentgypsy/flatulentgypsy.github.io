@@ -1,0 +1,71 @@
+$color--primary = #E038A3
+$color--white = #FFFFFF
+$color--grey = #ABABAB
+$color--black = #2B2B2B
+$color--off-white = #F1F1F1
+
+body
+  margin 0
+  background $color--off-white
+  font-family Georgia, Times, 'Times New Roman', serif
+  font-size 20px
+  line-height 1.7
+  color $color--black
+
+h1, h2, h3, h4, h5, h6
+  margin-top 0
+  margin-bottom 10px
+  font-family Helvetica, Arial, sans-serif
+  line-height 1.1
+
+p
+  margin 0
+
+  & + p
+    margin-top 20px
+
+em
+  display block
+  margin-top 20px
+  font-size 24px
+
+  & + p
+    margin-top 20px
+
+a
+  text-decoration none
+  color $color--primary
+
+  &:hover
+    text-decoration underline
+
+time
+  display block
+  padding-bottom 10px
+  font-size 18px
+  font-style normal
+  color $color--grey
+  border-bottom 1px solid $color--off-white
+
+  + p
+    margin-top 10px
+
+header
+  padding 100px 20px 150px
+  background $color--primary
+  text-align center
+  color $color--white
+
+  a
+    color $color--white
+
+main
+  margin -50px auto 50px
+  max-width 960px
+
+article
+  padding 50px
+  background $color--white
+
+  & + &
+    margin-top 25px
